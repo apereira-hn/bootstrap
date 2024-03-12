@@ -1,0 +1,45 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .dropdown-menu {
+  border-top: none;
+  border-radius: 0;
+  background-color: #f8f9fa;
+  .dropdown-item {
+    padding: 8px;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-textarea-fixed {
+  resize: none;
+}
+
+.vertical-line {
+  border-left: 1px solid #dee2e6;
+}
+
+.transform {
+  max-width: 320px;
+  transition: transform 0.2s;
+} 
+
+.transform:hover {
+  transform: scale(1.5);
+}
+
+

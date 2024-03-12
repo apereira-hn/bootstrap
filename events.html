@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bold Statement</title>
+    <meta name="description"
+      content="Full Stack Java DevOps - HTML/Project-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrapCSS.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="container">
+    <div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <h4>
+              .bold statement</h4>
+          </a>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <h4>About</h4>
+                </a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item"
+                      href="mission.html"><h4>Mission</h4></a></li>
+                  <li><a class="dropdown-item"
+                      href="staff.html"><h4>Staff</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="events.html"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <h4>Events</h4>
+                </a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item"
+                      href="gallery.html"><h4>Gallery</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html"><h4>Articles</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><h4>Contact</h4></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <h2 class="text-center">Event Schedule</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="border-end"><b>.event</b></th>
+                  <th scope="col"><b>.date</b></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border-end"><s>Frozen Frontier</s></td>
+                  <td><s>January 23, 2024</s></td>
+                </tr>
+                <tr>
+                  <td class="border-end">Canyon Kayak Conquest</td>
+                  <td>February 14, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Desert Dune Derby</td>
+                  <td>March 21, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Tropical Trail Triathlon</td>
+                  <td>April 28, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Arctic Ice Adventure</td>
+                  <td>May 4, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Volcano Race</td>
+                  <td>June 11, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Rainforest Rumble Run</td>
+                  <td>July 18, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Ocean Odyssey Orienteering</td>
+                  <td>August 25, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Skydive Spectacular</td>
+                  <td>September 2, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Jungle Journey Jamboree</td>
+                  <td>October 9, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Glacier Gala</td>
+                  <td>November 16, 2024</td>
+                </tr>
+                <tr>
+                  <td class="border-end">Savannah Safari Scramble</td>
+                  <td>December 23, 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownElements = document.querySelectorAll('.dropdown-toggle');
+        dropdownElements.forEach(function (element) {
+          element.addEventListener('click', function (e) {
+            var url = this.getAttribute('href');
+            if (url) {
+              window.location.href = url;
+            }
+          });
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bold Statement</title>
+    <meta name="description"
+      content="Full Stack Java DevOps - HTML/Project-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrapCSS.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="container">
+    <div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <h4>
+              .bold statement</h4>
+          </a>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <h4>About</h4>
+                </a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item"
+                      href="mission.html"><h4>Mission</h4></a></li>
+                  <li><a class="dropdown-item"
+                      href="staff.html"><h4>Staff</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="events.html"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <h4>Events</h4>
+                </a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item"
+                      href="gallery.html"><h4>Gallery</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html"><h4>Articles</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><h4>Contact</h4></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center">Mission Journey</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Origins</h4>
+            <p>
+              Bold Statement embarked on its mission to redefine adventure.
+              Founded
+              by passionate adventurers, we sought to create transformative
+              experiences.
+              Established in 1759, our journey began with a commitment to
+              empower
+              individuals through thrilling exploration.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Expansion Phase</h4>
+            <p>
+              Throughout our growth, Bold Statement remained steadfast in its
+              mission. Amid challenges, we expanded our reach, fostering a
+              community
+              of adventurers united by courage and curiosity.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4>Bold Statement Today</h4>
+            <p>
+              Today, Bold Statement continues its mission, igniting the spirit
+              of
+              adventure in all. With safety as our compass, we inspire
+              individuals to
+              embrace the unknown and craft their boldest narratives in the
+              great outdoors.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownElements = document.querySelectorAll('.dropdown-toggle');
+        dropdownElements.forEach(function (element) {
+          element.addEventListener('click', function (e) {
+            var url = this.getAttribute('href');
+            if (url) {
+              window.location.href = url;
+            }
+          });
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

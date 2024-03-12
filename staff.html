@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bold Statement</title>
+    <meta name="description"
+      content="Full Stack Java DevOps - HTML/Project-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrapCSS.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+  </head>
+  <body class="container">
+    <div>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <h4>
+              .bold statement</h4>
+          </a>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <h4>About</h4>
+                </a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item"
+                      href="mission.html"><h4>Mission</h4></a></li>
+                  <li><a class="dropdown-item"
+                      href="staff.html"><h4>Staff</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="events.html"
+                  id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <h4>Events</h4>
+                </a>
+                <ul class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item"
+                      href="gallery.html"><h4>Gallery</h4></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html"><h4>Articles</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><h4>Contact</h4></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="container">
+        <h2 class="text-center">Our Staff</h2>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-2">
+            <img src="/images/_93dd9e2b-afdf-4343-b4de-2ae42461e26c.jpeg"
+              class="img-fluid" alt="staff member" />
+          </div>
+          <div class="col-md-10">
+            <h3>Adventure Director</h3>
+            <h4>Emily Nguyen</h4>
+            <p>Visionary leader overseeing strategic planning and execution of
+              adventures.</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-2">
+            <img src="/images/_797ab187-c37a-4bd5-8e41-29832f9d14e9.jpeg"
+              class="img-fluid" alt="staff member" />
+          </div>
+          <div class="col-md-10">
+            <h3>Event Coordinator</h3>
+            <h4>David Patel</h4>
+            <p>Diligent organizer orchestrating seamless logistics for
+              exhilarating events.</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-2">
+            <img src="/images/_ee9619a8-ec59-40f0-b487-9e4da29b8542.jpeg"
+              class="img-fluid" alt="staff member" />
+          </div>
+          <div class="col-md-10">
+            <h3>Safety Supervisor</h3>
+            <h4>Sarah Reynolds</h4>
+            <p>Vigilant guardian ensuring utmost safety standards in every
+              adventure.</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-2">
+            <img src="/images/_b9a3dcfe-6e59-4c75-aa73-268e022d5417.jpeg"
+              class="img-fluid" alt="staff member" />
+          </div>
+          <div class="col-md-10">
+            <h3>Marketing Manager</h3>
+            <h4>Michael Chang</h4>
+            <p>Innovative strategist driving brand awareness and engagement
+              through dynamic campaigns.</p>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-2">
+            <img src="/images/_2f74a0dc-6a5b-4df2-a87e-888af7ea401f.jpeg"
+              class="img-fluid" alt="staff member" />
+          </div>
+          <div class="col-md-10">
+            <h3>Customer Experience Specialist</h3>
+            <h4>Jessica Hayes</h4>
+            <p>Empathetic liaison dedicated to crafting exceptional and
+              memorable customer interactions.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var dropdownElements = document.querySelectorAll('.dropdown-toggle');
+        dropdownElements.forEach(function (element) {
+          element.addEventListener('click', function (e) {
+            var url = this.getAttribute('href');
+            if (url) {
+              window.location.href = url;
+            }
+          });
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
